@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Repair Request</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Submit Mobile Repair Request</h2>
+
+<form id="repairForm">
+
+<input type="text" placeholder="Customer Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select id="brand">
+<option>Select Brand</option>
+<option>Apple</option>
+<option>Samsung</option>
+<option>Xiaomi</option>
+<option>Realme</option>
+<option>Oppo</option>
+<option>Vivo</option>
+</select>
+
+<select id="model">
+<option>Select Model</option>
+</select>
+
+<select>
+<option>Problem Type</option>
+<option>Screen Broken</option>
+<option>Battery Issue</option>
+<option>Charging Problem</option>
+<option>Software Issue</option>
+</select>
+
+<textarea placeholder="Describe Problem"></textarea>
+
+<div id="drop-area">
+<p>Drag & Drop Images</p>
+<input type="file" multiple>
+</div>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+<p id="ticket"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
