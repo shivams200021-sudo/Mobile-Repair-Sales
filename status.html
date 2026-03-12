@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Repair Status</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Check Repair Status</h2>
+
+<input type="text" id="ticketInput" placeholder="Enter Ticket ID">
+
+<button onclick="checkStatus()">Check Status</button>
+
+<p id="statusResult"></p>
+
+<script>
+
+function checkStatus(){
+
+let statusList=[
+"Pending",
+"Under Inspection",
+"Repair in Progress",
+"Ready for Pickup",
+"Completed"
+]
+
+let random=statusList[Math.floor(Math.random()*statusList.length)]
+
+document.getElementById("statusResult").innerHTML="Status: "+random
+
+}
+
+</script>
+
+</body>
+
+</html>
